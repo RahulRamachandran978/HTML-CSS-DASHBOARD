@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXyVLwW3QYCdvFCa4-FwBgag1BvN52QtrVKw&s"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- side-nav start -->
+    <section class="navbar">
+      <div class="nav_icons">
+        <img src="/assets/Logo.png" alt="" />
+        <img src="assets/Resting.png" alt="" style="width: 80px" />
+        <img src="assets/bag.png" alt="" />
+        <img src="assets/tick.png" alt="" />
+        <img src="assets/box.png" alt="" />
+        <img src="assets/calendar.png" alt="" />
+        <img src="assets/security.png" alt="" />
+        <img src="assets/chat.png" alt="" />
+        <img src="assets/cube.png" alt="" />
+        <img src="assets/Active.png" alt="" style="width: 70px" />
+        <img src="assets/page.png" alt="" />
+        <img src="assets/target.png" alt="" />
+        <img src="assets/wave.png" alt="" />
+        <img src="assets/question.png" alt="" />
+        <img src="assets/Img.png" alt="" />
+      </div>
+    </section>
+    <!-- side-nav end -->
+
+    <!-- invoice details start -->
+    <section class="details">
+      <div class="content">
+        <button class="logo">SS</button>
+        <div class="text_content">
+          <h4>Safe software integrated solutions</h4>
+          <span>8484 Ross Wells</span>
+        </div>
+        <button class="btn_select"><select name="" id="">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="1">2</option>
+        </select></button>
+      </div>
+      <div class="invoice_section">
+        <div class="invoice">
+          <h2>Invoices breakdown</h2>
+          <span>Learn more about invoices created</span>
+          <div class="all_invoices">
+            <div class="data">
+              <h1>All Invoices</h1>
+              <span>Week comparison</span>
+              <div class="bar_number">
+                <h1>1.345</h1>
+                <img src="assets/Arrow.png" alt="" />
+              </div>
+              <div id="progressbar">
+                <div id="myBar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="all_invoices">
+            <div class="data">
+              <h1>Scheduled</h1>
+              <span>Month comparison</span>
+              <div class="bar_number">
+                <h1>3.820</h1>
+              </div>
+              <div id="progressbar">
+                <div id="myBar" style="background: orange; width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="all_invoices">
+            <div class="data">
+              <h1>Unpaid</h1>
+              <span>Week comparison</span>
+              <div class="bar_number">
+                <h1>$4690</h1>
+                <img src="assets/Arrow.png" alt="" />
+              </div>
+              <div id="progressbar">
+                <div
+                  id="myBar"
+                  style="background: rgb(248, 177, 189); width: 30%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="all_invoices">
+            <div class="data">
+              <h1>Paid</h1>
+              <span>Week comparison</span>
+              <div class="bar_number">
+                <h1>$3820</h1>
+              </div>
+              <div id="progressbar">
+                <div
+                  id="myBar"
+                  style="background: rgb(99, 223, 94); width: 90%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- invoice details end -->
+
+    <!-- content nav start -->
+    <section class="main_content">
+    <nav class="main_nav">
+      <div class="new_invoice">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <h3>New Invoice</h3>
+      </div>
+      <div class="right_icons">
+        <button id="search-button">
+          <img src="assets/search.png" alt="Search Icon" id="search-bar" class="search-bar">
+      </button>
+      <input type="text" id="search-input" placeholder="Search...">
+        <button><img src="assets/add.png" alt="" /></button>
+      </div>
+    </nav>
+    <!-- content nav end -->
+
+    <!-- main invoice section start -->
+      <section class="main_details">
+        <div class="left_section">
+          <div class="box_container">
+            <form>
+        <div class="img_upload">
+            <h3>UPLOAD IMAGE</h3>
+            <!-- <input type="file" id="img_upload" name="img_upload"> -->
+        </div>
+        <div class="inputs">
+            <div class="container_input">
+              <label for="invoice_number" class="input_label">Invoice number</label>
+              <div class="input_container">
+                <input type="text" placeholder="AA-04-19-1890" name="invoice_number" id="invoice_number">
+                <img src="assets/invoice-icon.png" alt="invoice_icon">
+              </div>
+            </div>
+            <div class="container_input">
+            <label for="template">Template</label>
+            <div class="input_container">
+              <select name="template" id="template" class="select_template">
+                <option value="invoice">Select Invoice Template</option>
+              </select>
+            </div>
+            </div>
+            <div class="container_input">
+              <label for="cmpy_name">Company name</label>
+              <div class="input_container">
+                <input type="text" placeholder="Start typing..." name="cmpy_name">
+                <img src="assets/company.png" alt="company_name">
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="Date">Date</label>
+              <div class="input_container">
+                <input type="text" name="" id="" placeholder="Select Due Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <img src="assets/date.png" alt="Date">
+              </div>
+            </div>
+            <div class="business_address">
+              <label for="address">Business</label>
+              <div class="textarea_container">
+                <textarea name="address" id="business_address" placeholder="Start typing..."></textarea>
+                <img src="assets/invoice-icon.png" alt="">
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="country">Country</label>
+              <div class="input_container">
+                <select name="country" id="country">
+                  <option value="0" selected>Select Country</option>
+                  <option value="1">India</option>
+                  <option value="1">Canada</option>
+                  <option value="1">France</option>
+                </select>
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="city">City</label>
+              <div class="input_container">
+                <select name="city" id="city">
+                  <option value="0" selected>Select City</option>
+                  <option value="1">Palakkad</option>
+                  <option value="1">Alathur</option>
+                </select>
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="phone_number">Phone number</label>
+              <div class="input_container">
+                <input type="number" placeholder="Start typing..." maxlength="10">
+                <img src="assets/phone.png" alt="phone">
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="email">Email</label>
+              <div class="input_container">
+                <input type="email" name="email" id="email" placeholder="Start typing...">
+                <img src="assets/email.png" alt="email">
+              </div>
+            </div>
+            <div class="container_input">
+              <label for="tax">Tax rate</label>
+              <div class="input_container">
+
+                <input type="text" placeholder="Start typing..." name="tax_rate">
+                <img src="assets/tax.png" alt="tax">
+              </div>
+            </div>
+          </div>
+            <div class="form_btn">
+              <button type="submit" class="submit_btn">Save & Send</button>
+              <button type="reset" class="cancel_btn">Cancel</button>
+            </div>
+          </form>
+      </div>
+      </div>
+      <!-- right section of main container -->
+        <div class="right_section">
+          <div class="top_container">
+            <div class="step_container">
+              <div class="bill_icon">
+                <img src="assets/wallet.png" alt="wallet" />
+              </div>
+              <div class="bill_des">
+                <h3 id="bill_head">Bill To</h3>
+                <h5 class="description_body">Set your coustomer details</h5>
+            </div>
+           </div>
+           <div class="step_container">
+            <div class="bill_icon">
+              <img src="assets/form.png" alt="form" />
+            </div>
+            <div class="bill_des">
+              <h3>From</h3>
+              <h5 class="description_body">Set your personal details</h5>
+            </div>
+           </div>
+           <div class="step_container">
+            <div class="bill_icon">
+              <img src="assets/office.png" alt="office" />
+            </div>
+            <div class="bill_des">
+              <h3>Description</h3>
+              <h5 class="description_body">Add product or item</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom of right-container -->
+          <div class="bottom_container">
+            <div class="step_container">
+              <div class="bill_icon">
+                <img src="assets/save.png" alt="" />
+              </div>
+              <div class="bill_des">
+                <h3>Save As a Draft</h3>
+                <h5 class="description_body">Edit and send this invoice later</h5>
+              </div>
+            </div>
+            <div class="step_container">
+              <div class="bill_icon">
+                <img src="assets/delete.png" alt="" />
+              </div>
+              <div class="bill_des">
+                <h3>Delete invoice</h3>
+                <h5 class="description_body">Hide and disabale current invoice</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="main.js"></script>
+  </body>
+</html>
