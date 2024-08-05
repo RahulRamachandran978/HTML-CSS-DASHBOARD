@@ -1,30 +1,29 @@
 
-// document.getElementById('search-bar').addEventListener('click',function(){
-//     var searchInput = document.getElementById('search-input');
+const search = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+const uploadButton = document.querySelector('.img_upload button');
+const fileInput = document.querySelector('.img_upload input[type="file"]');
 
-//     if(searchInput.style.display === 'none' || searchInput.style.display === ' '){
-//         searchInput.style.display = 'block';
-//         searchInput.focus()
-//     }else{
-//         searchInput.style.display = 'none'
-//     }
-// })
 
-document.getElementById('search-button').addEventListener('click', function() {
-    var searchInput = document.getElementById('search-input');
-    if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+
+
+// search event 
+
+search.addEventListener('click',()=>{
+    if(searchInput.style.display === 'none' || searchInput.style.display === ''){
         searchInput.style.display = 'block';
-        searchInput.focus(); // Optional: To automatically focus the input field
-    } else {
+        searchInput.focus();
+    }else{
         searchInput.style.display = 'none';
     }
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const uploadButton = document.querySelector('.img_upload button');
-    const fileInput = document.querySelector('.img_upload input[type="file"]');
+})
 
+
+// image upload
+
+document.addEventListener('DOMContentLoaded',()=> {
     if (uploadButton && fileInput) {
-        uploadButton.addEventListener('click', function() {
+        uploadButton.addEventListener('click',()=> {
             fileInput.click();
         });
     } else {

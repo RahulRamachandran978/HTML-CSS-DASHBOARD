@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Safe software integrated solutions</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -18,26 +18,24 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
-  <body>
+  <body>  
     <!-- side-nav start -->
     <section class="navbar">
       <div class="nav_icons">
-        <img src="/assets/Logo.png" alt="" />
-        <img src="assets/Resting.png" alt="" style="width: 80px" />
-        <img src="assets/bag.png" alt="" /> 
-
-        <img src="assets/tick.png" alt="" />
-        <img src="assets/box.png" alt="" />
-        <img src="assets/calendar.png" alt="" />
-        <img src="assets/security.png" alt="" />
-        <img src="assets/chat.png" alt="" />
-        <img src="assets/cube.png" alt="" />
-        <img src="assets/Active.png" alt="" style="width: 70px" />
-        <img src="assets/page.png" alt="" />
-        <img src="assets/target.png" alt="" />
-        <img src="assets/wave.png" alt="" />
-        <img src="assets/question.png" alt="" />
-        <img src="assets/Img.png" alt="" />
+        <a href="/pages/home.html"><img src="/assets/Logo.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/Resting.png" alt="" style="width: 80px" /></a>
+        <a href="/error/404.html"><img src="assets/bag.png" alt="" /> </a>
+        <a href="/error/404.html"><img src="assets/tick.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/box.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/calendar.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/security.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/chat.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/cube.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/page.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/target.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/wave.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/question.png" alt="" /></a>
+        <a href="/error/404.html"><img src="assets/Img.png" alt="" /></a>
       </div>
     </section>
     <!-- side-nav end -->
@@ -45,13 +43,13 @@
     <!-- invoice details start -->
     <section class="details">
       <div class="content">
-        <button class="logo">SS</button>
+        <button class="logo"><a href="/pages/home.html">SS</a></button>
         <div class="text_content">
           <h4>Safe software integrated solutions</h4>
           <span>8484 Ross Wells</span>
         </div>
         <button class="btn_select"><select name="" id="">
-          <option value="0">option 1</option>
+          <option value="0" selected>option 1</option>
           <option value="1">option 2</option>
           <option value="1">option 3</option>
         </select></button>
@@ -144,54 +142,54 @@
           <div class="box_container">
             <form>
               <div class="img_upload">
-                <button type="button">
+                <button type="button" id="btn">
                   <i class="bi bi-upload"></i>
                   UPLOAD IMAGE
                 </button>
                   <!-- <input type="file" id="img_upload" name="img_upload"> -->
                   <input type="file" id="file-upload" name="img_upload" accept="image/*" style="display: none;">
               </div>
-        <div class="inputs">
+           <div class="inputs">
             <div class="container_input">
-              <label for="invoice_number" class="input_label">Invoice number</label>
+              <label for="invoice_number" class="input_label" style="font-size: 18px;">Invoice number</label>
               <div class="input_container">
                 <input type="text" placeholder="AA-04-19-1890" name="invoice_number" id="invoice_number">
                 <img src="assets/invoice-icon.png" alt="invoice_icon">
               </div>
             </div>
             <div class="container_input">
-            <label for="template">Template</label>
+            <label for="template" style="font-size: 18px;">Template</label>
             <div class="input_container">
-              <select name="template" id="template" class="select_template">
-                <option value="invoice">Select Invoice Template</option>
+              <select name="template" id="template" class="select_template" style="color: rgb(95, 78, 78);font-size: 14px;font-weight: 700;" >
+                <option value="invoice"  >Select Invoice Template</option>
               </select>
             </div>
             </div>
             <div class="container_input">
-              <label for="cmpy_name">Company name</label>
+              <label for="cmpy_name" style="font-size: 18px;">Company name</label>
               <div class="input_container">
-                <input type="text" placeholder="Start typing..." name="cmpy_name">
+                <input type="text" placeholder="Start typing..." name="cmpy_name" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                 <img src="assets/company.png" alt="company_name">
               </div>
             </div>
             <div class="container_input">
-              <label for="Date">Date</label>
+              <label for="Date" style="font-size: 18px;font-weight: 500;">Date</label>
               <div class="input_container">
-                <input type="text" name="" id="" placeholder="Select Due Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="text" name="" id="" placeholder="Select Due Date" onfocus="(this.type='date')" onblur="(this.type='text')" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                 <img src="assets/date.png" alt="Date">
               </div>
             </div>
             <div class="business_address">
-              <label for="address">Business</label>
+              <label for="address" style="font-size: 18px;font-weight: 500;padding: 10px;">Business address</label>
               <div class="textarea_container">
-                <textarea name="address" id="business_address" placeholder="Start typing..."></textarea>
+                <textarea name="address" id="business_address" placeholder="Start typing..." style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);"></textarea>
                 <img src="assets/invoice-icon.png" alt="">
               </div>
             </div>
             <div class="container_input">
-              <label for="country">Country</label>
-              <div class="input_container">
-                <select name="country" id="country">
+              <label for="country" style="font-size: 18px;font-weight: 500;">Country</label>
+              <div class="input_container" >
+                <select name="country" id="country" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                   <option value="0" selected>Select Country</option>
                   <option value="1">India</option>
                   <option value="1">Canada</option>
@@ -200,9 +198,9 @@
               </div>
             </div>
             <div class="container_input">
-              <label for="city">City</label>
+              <label for="city" style="font-size: 18px;font-weight: 500;">City</label>
               <div class="input_container">
-                <select name="city" id="city">
+                <select name="city" id="city" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                   <option value="0" selected>Select City</option>
                   <option value="1">Palakkad</option>
                   <option value="1">Alathur</option>
@@ -210,31 +208,32 @@
               </div>
             </div>
             <div class="container_input">
-              <label for="phone_number">Phone number</label>
+              <label for="phone_number" style="font-size: 18px;font-weight: 500;">Phone number</label>
               <div class="input_container">
-                <input type="number" placeholder="Start typing..." maxlength="10">
+                <input type="number" placeholder="Start typing..." maxlength="10" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                 <img src="assets/phone.png" alt="phone">
               </div>
             </div>
-            <div class="container_input">
-              <label for="email">Email</label>
+            <div class="container_input" >
+              <label for="email" style="font-size: 18px;font-weight: 500;">Email</label>
               <div class="input_container">
-                <input type="email" name="email" id="email" placeholder="Start typing...">
+                <input type="email" name="email" id="email" placeholder="Start typing..." style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                 <img src="assets/email.png" alt="email">
               </div>
+              <div id="emailError" class="error-message"></div>
             </div>
             <div class="container_input">
               <label for="tax">Tax rate</label>
               <div class="input_container">
 
-                <input type="text" placeholder="Start typing..." name="tax_rate">
+                <input type="text" placeholder="Start typing..." name="tax_rate" style="font-weight: 700;font-size: 14px; color: rgb(95, 78, 78);">
                 <img src="assets/tax.png" alt="tax">
               </div>
             </div>
           </div>
             <div class="form_btn">
-              <button type="submit" class="submit_btn">Save & Send</button>
-              <button type="reset" class="cancel_btn">Cancel</button>
+              <button type="submit" id="submit_btn" class="submit_btn" name="submit">Save & Send</button>
+              <button type="reset" id="cancel_btn" class="cancel_btn">Cancel</button>
             </div>
           </form>
       </div>
