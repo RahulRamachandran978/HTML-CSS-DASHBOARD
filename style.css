@@ -71,7 +71,7 @@ body{
     background: rgb(218, 209, 209);
 }
 .btn_select select{
-    background: rgb(218, 209, 209);
+    background: rgb(255, 255, 255);
     border: none;
     width: 20px;
     height: 20px;
@@ -202,6 +202,18 @@ body{
 }
 .img_upload h3{
     font-size: 12px;
+}
+.img_upload button{
+    background: rgb(79, 79, 245);
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    padding: 7px;
+    border-radius: 4px;
+    color: #fff;
+}
+.img_upload button:hover{
+    background: rgb(63, 63, 197);
 }
 .img_upload input[type='file']{
     display: none;

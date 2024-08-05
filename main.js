@@ -19,3 +19,15 @@ document.getElementById('search-button').addEventListener('click', function() {
         searchInput.style.display = 'none';
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadButton = document.querySelector('.img_upload button');
+    const fileInput = document.querySelector('.img_upload input[type="file"]');
+
+    if (uploadButton && fileInput) {
+        uploadButton.addEventListener('click', function() {
+            fileInput.click();
+        });
+    } else {
+        console.error('Upload button or file input not found');
+    }
+});
