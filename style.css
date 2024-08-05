@@ -163,6 +163,10 @@ body{
     padding: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+#search-input {
+    display: none; /* Initially hidden */
 }
 /* form section */
 .main_details{
