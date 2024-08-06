@@ -256,6 +256,10 @@ body{
     padding: 1rem;
     grid-column: 1;
 }
+.error-message{
+    color: red;
+    font-size: 14px;
+}
 .input_container{
     display: flex;
     align-items: center;
